@@ -30,6 +30,6 @@ class AppCacheKeys {
 
   static AppCacheKeys instance = _appCacheKeys;
 
-  String userName = '';
-  String useId = '';
+  String userName = 'userName';
+  String useId = 'useId';
 }
