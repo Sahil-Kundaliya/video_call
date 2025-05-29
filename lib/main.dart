@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
 import 'package:video_audio_call/login_page.dart';
+import 'package:video_audio_call/services/jiti_call_screen.dart';
 import 'package:video_audio_call/splash_page.dart';
 import 'package:zego_zimkit/zego_zimkit.dart';
 
@@ -25,7 +27,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: true ? JitiCallScreen(title: 'Video call demo') : SplashScreen(),
     );
   }
 }
+
+// https://getstream.io/resources/projects/webrtc/platforms/flutter/?utm_source=chatgpt.com

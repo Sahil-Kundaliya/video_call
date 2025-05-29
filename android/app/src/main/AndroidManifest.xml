@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
+        tools:replace="android:label"
         android:label="video_audio_call"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
