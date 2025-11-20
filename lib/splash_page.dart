@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:video_audio_call/home_page.dart';
 import 'package:video_audio_call/login_page.dart';
 import 'package:video_audio_call/services/cache.dart';
-import 'package:zego_zimkit/zego_zimkit.dart';
+// import 'package:zego_zimkit/zego_zimkit.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -32,15 +32,15 @@ class _SplashScreenState extends State<SplashScreen> {
             .fatchData(prefKey: AppCacheKeys.instance.userName) ??
         '';
     log('SSS userId $userId');
-    if (userId.isNotEmpty) {
-      await ZIMKit.instance.connectUser(id: userId, name: username);
-    }
+    // if (userId.isNotEmpty) {
+    //   await ZIMKit.instance.connectUser(id: userId, name: username);
+    // }
 
-    Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-            builder: (context) =>
-                userId.isNotEmpty ? const HomeScreen() : const LoginScreen()));
+    // Navigator.pushReplacement(
+    //     context,
+    //     MaterialPageRoute(
+    //         builder: (context) =>
+    //             userId.isNotEmpty ? const HomeScreen() : const LoginScreen()));
   }
 
   @override

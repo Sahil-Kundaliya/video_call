@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
-import 'package:video_audio_call/login_page.dart';
-import 'package:video_audio_call/services/jiti_call_screen.dart';
-import 'package:video_audio_call/splash_page.dart';
-import 'package:zego_zimkit/zego_zimkit.dart';
+// import 'package:zego_zimkit/zego_zimkit.dart';
 
 void main() {
-  ZIMKit().init(
-    appID: 1749949191, // your appid
-    appSign:
-        '58090123bb8381ba58d9da81615b69542b5cbe7541d6a8614c08cd19b168329f', // your appSign
-  );
+  // ZIMKit().init(
+  //   appID: 1749949191, // your appid
+  //   appSign:
+  //       '58090123bb8381ba58d9da81615b69542b5cbe7541d6a8614c08cd19b168329f', // your appSign
+  // );
 
   runApp(const MyApp());
 }
@@ -27,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: true ? JitiCallScreen(title: 'Video call demo') : SplashScreen(),
+      // home: true ? JitiCallScreen(title: 'Video call demo') : SplashScreen(),
     );
   }
 }
